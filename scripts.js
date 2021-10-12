@@ -10,44 +10,44 @@ disableLinks();
 // // Al hacer click sobre un elemento van a ocurrir varias cosas. Todo depende del tipo de elemento:
 // // 2.1 Imágenes: Cambia la imagen por uno de los gif que tienes en la carpeta assets con el nombre magic-*.
 const images = document.getElementsByTagName("img");
-// for (let i = 0; i < images.length; i++) {
-//     images[i].addEventListener("click", changeImages);
-//     function changeImages() {
-//         images[i].src = "./assets/magic-1.gif";
-//     }
-// }
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", changeImages);
+    function changeImages() {
+        images[i].src = "./assets/magic-1.gif";
+    }
+}
 // //Preguntar por que la [i] en images a Sol
 
 // // 2.2 Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
 const paragraphs = document.getElementsByTagName("p");
-// for (let i = 0; i < paragraphs.length; i++) {
-//     paragraphs[i].addEventListener("click", changeParragraphs);
-//     function changeParragraphs() {
-//         paragraphs[i].style.color = "red";
-//         paragraphs[i].style.backgroundColor = "blue";
-//     }
-// }
+for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].addEventListener("click", changeParragraphs);
+    function changeParragraphs() {
+        paragraphs[i].style.color = "red";
+        paragraphs[i].style.backgroundColor = "blue";
+    }
+}
 
 // // // 2.3 Bloques de article o section: Cambia el color de fondo.
-// let articulos = document.getElementsByTagName("article");
-// let seccion = document.getElementsByTagName("section");
-// console.log (articulos, seccion)
+let articulos = document.getElementsByTagName("article");
+let seccion = document.getElementsByTagName("section");
+console.log (articulos, seccion)
 
-// for (let i = 0; i < articulos.length || i < seccion.length; i++) {
-//     articulos[i].addEventListener("click", changeColor);
-//     seccion[i].addEventListener("click", changeColor);
-//     function changeColor(){
-//         seccion[i].style.backgroundColor = "black";
-//         articulos[i].style.backgroundColor = "yellow";
-//     }
-// }
+for (let i = 0; i < articulos.length || i < seccion.length; i++) {
+    articulos[i].addEventListener("click", changeColor);
+    seccion[i].addEventListener("click", changeColor);
+    function changeColor(){
+        seccion[i].style.backgroundColor = "black";
+        articulos[i].style.backgroundColor = "yellow";
+    }
+}
 
-// articulosArray.forEach((item) => {
-//     addEventListener("click", changeColor);
-//     });
-// function changeColor(){
-//     articulosArray[0].style.color= "yellow";
-// }
+articulosArray.forEach((item) => {
+    addEventListener("click", changeColor);
+    });
+function changeColor(){
+    articulosArray[0].style.color= "yellow";
+}
 
 
 
